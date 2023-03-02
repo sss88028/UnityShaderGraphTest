@@ -47,5 +47,8 @@ Material:
     - _BUILTIN_ZTest: 4
     - _BUILTIN_ZWrite: 1
     - _BUILTIN_ZWriteControl: 0
-    m_Colors: []
+    m_Colors:
+    - _BaseColor: {r: 0, g: 1, b: 0.15109727, a: 1}
+    - _MainColor: {r: 0, g: 1, b: 0.15109727, a: 1}
+    - _Main_Color: {r: 0.94509804, g: 0.54509807, b: 0.5058824, a: 1}
   m_BuildTextureStacks: []
