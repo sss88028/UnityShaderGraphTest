@@ -19,13 +19,19 @@ Material:
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: 761f1f11f7eb4e54f9bb3e0bc5bc11cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _Scale: 1
-    m_Colors: []
+    m_Colors:
+    - _BottmColor: {r: 0, g: 0, b: 1, a: 0}
+    - _TownColor: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6908929988242781294
 MonoBehaviour:

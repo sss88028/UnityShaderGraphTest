@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_TerrainHeight
+  m_Shader: {fileID: -6465566751694194690, guid: e535f7657a352674c9cf1bd452cb21e7, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 1f07e078e32c119449e414d281b4bdea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
+    - _GrassLevel: 0.1
+    - _RockLevel: 0.2
+    - _SnowLevel: 0.3
+    m_Colors:
+    - _Grass: {r: 0.19127485, g: 1, b: 0, a: 0}
+    - _Rock: {r: 0.62264144, g: 0.40590236, b: 0.15566036, a: 0}
+    - _Snow: {r: 1, g: 1, b: 1, a: 0}
+    - _Water: {r: 0.14900726, g: 0, b: 1, a: 0}
+  m_BuildTextureStacks: []

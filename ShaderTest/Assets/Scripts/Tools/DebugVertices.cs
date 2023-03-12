@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 [ExecuteInEditMode]
 public class DebugVertices : MonoBehaviour {
@@ -15,7 +16,13 @@ public class DebugVertices : MonoBehaviour {
 			mesh = GetComponent<MeshFilter>().sharedMesh;
 			vertices = mesh.vertices;
 		}
-		foreach (Vector3 v in vertices)
-            UnityEditor.Handles.Label(transform.position + v, "v: " + v.ToString());
+		foreach (var v in vertices)
+		{
+			var objectPos = v;
+			var worldPos = transform.position + objectPos;
+			var viewVert = SceneView.GetAllSceneCameras()[0].WorldToViewportPoint(worldPos);
+
+			UnityEditor.Handles.Label(worldPos, $"{objectPos}, {worldPos}, {viewVert}");
+		}
 	}
 }
